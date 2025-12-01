@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Cut Puzzles</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #fafafa; margin: 0; }
+    header { background: #2f2f2f; color: #fff; padding: 25px; text-align: center; font-size: 36px; font-weight: bold; }
+    .tagline { text-align: center; font-size: 20px; color: #555; margin-top: -10px; }
+    .hero { background: url('https://via.placeholder.com/1200x350?text=Custom+Cut+Puzzles') center/cover no-repeat; height: 350px; display: flex; align-items: center; justify-content: center; }
+    .hero h1 { background: rgba(0,0,0,0.6); padding: 20px 40px; color: white; border-radius: 10px; font-size: 40px; }
+    .container { max-width: 950px; margin: auto; padding: 20px; background: white; margin-top: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .section-title { font-size: 28px; margin-bottom: 10px; }
+    label { font-weight: bold; }
+    input, select, textarea { width: 100%; padding: 12px; margin-top: 10px; border-radius: 6px; border: 1px solid #ccc; }
+    .btn { background: #333; color: white; padding: 15px; border: none; border-radius: 8px; cursor: pointer; width: 100%; font-size: 18px; }
+    .btn:hover { background: #555; }
+    .pricing-box { margin-top: 20px; padding: 20px; background: #f3f3f3; border-radius: 10px; }
+    .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 20px; }
+    .gallery img { width: 100%; border-radius: 10px; box-shadow: 0 0 5px rgba(0,0,0,0.2); }
+    footer { margin-top: 40px; text-align: center; padding: 25px; color: #777; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <header>Custom Cut Puzzles</header>
+  <div class="tagline">Every Piece Tells a Story</div>
+
+  <div class="hero">
+    <h1>Turn Any Photo Into a Beautiful Jigsaw Puzzle</h1>
+  </div>
+
+  <div class="container">
+    <div class="section-title">Order Your Custom Puzzle</div>
+    <form>
+      <label>Upload Your Photo</label>
+      <input type="file" accept="image/*" required />
+
+      <label>Your Name</label>
+      <input type="text" placeholder="Full Name" required />
+
+      <label>Email</label>
+      <input type="email" placeholder="you@example.com" required />
+
+      <label>Puzzle Size</label>
+      <select required>
+        <option value="">Select one</option>
+        <option>110-piece — $24.99</option>
+        <option>252-piece — $29.99</option>
+        <option>500-piece — $39.99</option>
+        <option>1000-piece — $49.99</option>
+      </select>
+
+      <label>Shipping Address</label>
+      <textarea placeholder="Enter your full shipping address"></textarea>
+
+      <label>Notes for Your Puzzle (optional)</label>
+      <textarea placeholder="Cropping, color change, text, special instructions"></textarea>
+
+      <button class="btn">Submit Order Request</button>
+    </form>
+
+    <div class="pricing-box">
+      <h3>Puzzle Pricing</h3>
+      <ul>
+        <li>110-piece — $24.99</li>
+        <li>252-piece — $29.99</li>
+        <li>500-piece — $39.99</li>
+        <li>1000-piece — $49.99</li>
+      </ul>
+      <p>Printed in Canada. Fast turnaround & shipped nationwide.</p>
+    </div>
+
+    <h3>Sample Gallery</h3>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300?text=Pet+Puzzle" />
+      <img src="https://via.placeholder.com/300?text=Family+Puzzle" />
+      <img src="https://via.placeholder.com/300?text=Landscape+Puzzle" />
+    </div>
+  </div>
+
+  <footer>© 2025 Custom Cut Puzzles — Made in Canada</footer>
+</body>
+</html>
